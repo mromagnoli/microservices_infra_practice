@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  api-flask:
+    container_name: api_flask
+    build: ./api
+    command: flask run --host=0.0.0.0
+    stdin_open: true # This allows us to use interactive shell
+    tty: true # This allows us to use interactive shell
+    volumes:
+      - ./api:/project
+    ports:
+      - "5000:5000"
