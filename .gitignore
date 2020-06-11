@@ -5,3 +5,6 @@ __pycache__
 venv
 *.egg-info
 .tox
+
+# Configs
+dev_env.py
